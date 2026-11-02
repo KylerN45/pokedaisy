@@ -127,6 +127,10 @@ android {
     }
 
     buildTypes {
+        debug {
+            applicationIdSuffix = ".eqtest"
+            versionNameSuffix = "-eq-test"
+        }
         release {
             isMinifyEnabled = false
             if (keystoreProps != null) signingConfig = signingConfigs.getByName("release")
